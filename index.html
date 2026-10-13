@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
+<title>林建平的個⼈網⾴實作練習</title>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>林建平的個⼈網⾴實作練習</title>
-
-    <style>
-        body {
-            background-color: rgb(207, 209, 222);
-        }
-
-        p {
-            color: green;
-        }
-    </style>
+    <!-- 引⼊ Google Fonts 思源⿊體 Noto Sans TC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&dis
+play=swap" rel="stylesheet">
+    <!-- 引⼊外部 CSS 樣式表 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <h1>歡迎來到我的網⾴設計學習筆記</h1>
         <nav>
-            <a href="index.html">⾸⾴</a> |
-            <a href="https://www.shu.edu.tw/" target="_blank">世新⼤學⾸⾴</a>
+            <a href="index.html">⾸⾴</a>
+            <a href="https://www.shu.edu.tw/" target="_blan
+k">世新⼤學⾸⾴</a>
         </nav>
+        <button id="theme-btn" onclick="toggleTheme()">🌙
+            切換深⾊模式</button>
     </header>
-    <section>
+    <section id="about-section">
         <h2>關於我的學習⽬標</h2>
-        <p>這是我在世新⼤學網⾴設計通識課的第三週練習作品。</p>
+        <p id="welcome-msg">這是我在世新⼤學網⾴設計通識課的第三週練習作品。</p>
         <p>透過每週逐步練習，希望能打造出專屬⾃⼰的網⾴作品集！</p>
+        <button onclick="showSmartGreeting()">💡 取得今⽇學
+            習動⼒問候語</button>
+        <br><br>
         <img src="ShihHsin.jpg" alt="世新⼤學Logo">
         <h3>本週學會的技能列表：</h3>
         <ul>
@@ -62,6 +66,9 @@
     <footer>
         <p>© 2026 ⼩明 All Rights Reserved.</p>
     </footer>
+
+<!-- 引⼊外部 JavaScript 檔案 -->
+<script src="script.js"></script>
 </body>
 
 </html>
